@@ -1,20 +1,15 @@
 import { Container } from './style'
-//import {Fragment} from 'react'
-export function Details(){
+import { Colorh1 } from './style'
 
-
+export function Details() {
   return(
-    
     <Container>
 
-      <h1>Hello World!, meu primeiro código em react</h1> 
-
+      <Colorh1>Hello </Colorh1>
+      
       <span>Teste</span>
- 
+
     </Container>
-  
   )
-
-
 }
 
