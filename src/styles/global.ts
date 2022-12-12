@@ -6,6 +6,7 @@ export default createGlobalStyle `
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        color: #fff;
     }
 
    
@@ -14,6 +15,14 @@ export default createGlobalStyle `
         background-color: ${props => props.theme.colors.BACKGROUND_900};
         color: ${props => props.theme.colors.WHITE}
 
+        -webkit-font-smoothing antialiased;
+
+    }
+
+    body, input, button, textarea {
+        font-family: 'Roboto Slab', serif;
+        font-size: 16px;
+        outline: none;
     }
 
     a{
