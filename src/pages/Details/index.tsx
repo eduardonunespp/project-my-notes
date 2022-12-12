@@ -22,6 +22,8 @@ export function Details() {
 
           <ButtonText title='Excluir Nota' />
 
+        
+
           <h1> Introdução ao React </h1>
 
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est qui debitis distinctio aliquam dolore at nam reiciendis ab fugit molestiae quo in, animi exercitationem sapiente. Inventore quas recusandae amet tenetur? 

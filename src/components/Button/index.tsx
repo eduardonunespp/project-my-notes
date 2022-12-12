@@ -1,17 +1,14 @@
-import { rest } from "lodash";
+
+import { HTMLAttributes, HTMLProps } from "react";
 import { Container } from "./styles";
 
 
-
-type btntypes = "button" | "submit" | "reset"
-
-
-interface propsType {
-    title: string | number;
+interface Props extends HTMLAttributes<HTMLButtonElement> {
+    title: string;
     loading?: boolean;
 }
 
-export function Button({title, loading = false, ...rest}: propsType){
+export function Button({title, loading = false, ...rest}: Props){
 
     return(
         <Container 

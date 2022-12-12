@@ -10,6 +10,7 @@ export function Header(){
             
             <Profile>
                 <img src="https://github.com/eduardonunespp.png" alt="foto do usuario" />
+                {/*<img src="https://github.com/eduardanunes.png" alt="foto do usuario" /> */}
 
                 <div>
                     <span>Bem-vindo</span>

@@ -1,4 +1,4 @@
-import { rest } from "lodash";
+
 import { Container } from "./styles";
 import { TitleInterface } from "../../global";
 
