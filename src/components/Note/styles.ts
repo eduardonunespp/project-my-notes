@@ -12,7 +12,7 @@ export const Container = styled.button`
     padding: 22px;
     margin-bottom: 16px;
 
-    h1 > {
+    > h1 {
         flex: 1;
         text-align: left;
         font-weight: 700;
@@ -20,7 +20,7 @@ export const Container = styled.button`
         color: ${({theme}) => theme.colors.WHITE}
     }
 
-    footer > {
+    > footer {
         width: 100%;
         display: flex;
         margin-top: 24px;

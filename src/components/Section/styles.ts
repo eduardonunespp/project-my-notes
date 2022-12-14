@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.section `
     margin: 28px 0px;
+    padding: 15px;
 
 
     > h2 {
