@@ -4,10 +4,20 @@ import { TitleInterface } from "../../global";
 
 
 
-export function ButtonText({title, ...rest}: TitleInterface){
+
+interface buttonText {
+    title: string;
+    isActive?: boolean;
+}
+
+
+
+
+export function ButtonText({title, isActive = false, ...rest}: buttonText){
     return(
         <Container
         type='button'
+        isActive = {isActive}
         {...rest}
         >
 

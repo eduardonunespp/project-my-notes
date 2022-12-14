@@ -22,21 +22,59 @@ export const Container = styled.div `
 
 export const Brand = styled.div `
     grid-area: brand;
-    background-color: green;
+    
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-bottom: 1px solid ${({theme}) => theme.colors.BACKGROUND_700};
+    background-color: ${({theme}) => theme.colors.BACKGROUND_900};
+
+    > h1 {
+        font-size: 24px;
+        color: ${({theme}) => theme.colors.ORANGE}
+    }
 `;
 export const Menu  = styled.ul `
     grid-area: menu;
-    background-color: yellow;
+
+    background-color: ${({theme}) => theme.colors.BACKGROUND_900};
+    padding-top: 64px;
+
+    text-align: center;
+
+    > li {
+        margin-bottom: 24px;
+    }
+    
 `;
 export const Search  = styled.div `
     grid-area: search;
-    background-color: orange;
+
+    padding: 64px 64px 0;
+   
 `;
 export const Content  = styled.div `
     grid-area: content;
-    background-color: red;
+   
 `;
 export const NewNote = styled.button `
     grid-area: newnote;
-    background-color: blue;
+
+
+    background-color: ${({ theme }) => theme.colors.ORANGE};
+    border: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: black;
+
+    svg {
+        margin-right: 8px;
+        color: black;
+    }
+   
 `;
