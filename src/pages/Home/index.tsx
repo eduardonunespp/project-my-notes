@@ -34,7 +34,7 @@ export function Home(){
 
             <Content>
                 <Section title="Minhas notas">
-                    <Note data={
+                    <Note data = {
                         {title: 'React',
                         tags: [
                             {id: '1', name: 'react'},
@@ -45,9 +45,6 @@ export function Home(){
                     </Note> 
 
                     
-
-
-
                 </Section>    
 
             </Content>

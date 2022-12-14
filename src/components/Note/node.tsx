@@ -3,12 +3,10 @@ import { Container } from './styles'
 import { Tag } from '../Tag'
 
 
-
 type typetags = {
     id: string;
     name: string;
 }
-
 
  interface NoteComponents {
      data: dateNotes;
@@ -17,12 +15,11 @@ type typetags = {
 
 interface dateNotes extends NoteComponents {
     title: string;
-     tags: typetags;
+    tags: typetags[];
 }
 
 
-
-export function Note({data, ...rest}: NoteComponents){
+export function Note({data, ...rest}){
 
     return(
         <Container {...rest}>
