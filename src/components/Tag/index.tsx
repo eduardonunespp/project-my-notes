@@ -6,9 +6,9 @@ interface nametitle {
 }
 
 
-export function Tag({ title }: TitleInterface){
+export function Tag({ title, ...rest}: nametitle){
     return(
-        <Container>
+        <Container {...rest}>
             {title}
         </Container>
     )
