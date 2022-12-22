@@ -1,9 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import {Home} from './pages/Home'
+import { Home } from './pages/Home'
 import { ThemeProvider } from 'styled-components'
 import theme from './styles/theme'
 import GlobalStyles from './styles/global'
+//import { Login } from './pages/Login'
 
 
 
