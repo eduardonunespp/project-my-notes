@@ -6,13 +6,13 @@ export default createGlobalStyle `
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        color: #fff;
+        
     }
 
    
     
     body{
-        background-color: ${props => props.theme.colors.BACKGROUND_900};
+        background-color: ${props => props.theme.colors.BACKGROUND_800};
         color: ${props => props.theme.colors.WHITE}
 
         -webkit-font-smoothing antialiased;
