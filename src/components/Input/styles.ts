@@ -32,7 +32,8 @@ export const Container = styled.div `
 
     > svg {
             margin-left: 16px;
-            color: blue;
+            color: ${({theme}) => theme.colors.GRAY_300};
+            cursor: pointer;
         }
 
 

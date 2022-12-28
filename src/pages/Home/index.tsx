@@ -39,17 +39,16 @@ export function Home(){
                         tags: [
                             {id: '1', name: 'react'},
                             {id: '2', name: 'rocketseat'},
-                        ]
-                        }}>
-                            
-                    </Note> 
-
-                    
+                        ]        
+                        }}
+                        >
+                        </Note>
+                                                
                 </Section>    
 
             </Content>
 
-            <NewNote>
+            <NewNote to='/new'>
             
                 <FiPlus />
                 Criar nota

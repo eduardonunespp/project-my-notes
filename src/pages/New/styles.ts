@@ -13,11 +13,28 @@ export const Container = styled.div `
     'header'
     'content'
     ;
+
+    > main {
+        grid-area: content;
+        overflow-y: auto;
+    }
+
+    .tags {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+        button {
+            margin-top: 0px;
+            color: #fff;
+        }
 `
 
 
 export const Form = styled.form `
-    max-width: 550px;
+    max-width: 560px;
     margin: 38px auto;
 
     > header {
@@ -35,5 +52,7 @@ export const Form = styled.form `
             font-size: 20px;
             color: ${({theme}) => theme.colors.GRAY_300}
         }
+
+    
     }
 `

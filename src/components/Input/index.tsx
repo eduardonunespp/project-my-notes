@@ -2,7 +2,6 @@
 import { Container } from "./styles";
 
 
-
 export function Input({icon: Icon, ...rest}: any){
     return(
         <Container>

@@ -10,7 +10,10 @@ export default createGlobalStyle `
     }
 
    
-    
+    h1, h2 {
+        color: #fff;
+    }
+
     body{
         background-color: ${props => props.theme.colors.BACKGROUND_800};
         color: ${props => props.theme.colors.WHITE}

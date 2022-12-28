@@ -6,6 +6,8 @@ import { Button } from '../../components/Button'
 import { Form } from './styles'
 import { Background } from './styles'
 
+import { Link } from 'react-router-dom'
+
 
 export function SignUp(){
     return(
@@ -37,18 +39,14 @@ export function SignUp(){
                 icon={ FiLock }
                 />
 
-    
                 <Button title='Cadastrar' />
 
-                <a href="#">
+                <Link to='/'>
                     Voltar para o Login
-                </a>
+                </Link>
 
             </Form>
 
-
-          
-            
 
         </Container>
 

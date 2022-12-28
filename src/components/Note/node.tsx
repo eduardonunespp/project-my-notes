@@ -1,4 +1,3 @@
-
 import { Container } from './styles'
 import { Tag } from '../Tag'
 
@@ -26,6 +25,7 @@ export function Note({data, ...rest}){
             <h1>{data.title}</h1>
 
             { 
+
                 data.tags &&
                 <footer>
                     {
@@ -33,8 +33,9 @@ export function Note({data, ...rest}){
                             <Tag key={tag.id} title={tag.name} />
                         })
                     }
-                
+
                 </footer>
+
             }
         </Container>
     )

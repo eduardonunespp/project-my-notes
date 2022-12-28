@@ -23,7 +23,7 @@ export const Container = styled.div `
 `
 
 export const Form = styled.form `
-     max-width: 340px;
+     max-width: 370px;
      margin: 30px auto 0;
 
         svg {

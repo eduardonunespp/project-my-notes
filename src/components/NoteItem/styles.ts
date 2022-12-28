@@ -7,6 +7,7 @@ interface isNew {
 export const Container = styled.div<isNew> `
     display: flex;
     align-items: center;
+    box-sizing: border-box;
 
     background-color: ${({theme, isNew }) => isNew ? "transparent" : theme.colors.BACKGROUND_900 };
     color: ${({theme}) => theme.colors.GRAY_300};

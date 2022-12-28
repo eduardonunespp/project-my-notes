@@ -2,9 +2,10 @@ import { Container } from './styles'
 import { Input } from '../../components/Input'
 import { FiMail, FiLock } from 'react-icons/fi'
 import { Button } from '../../components/Button'
-
 import { Form } from './styles'
 import { Background } from './styles'
+
+import { Link } from 'react-router-dom'
 
 
 export function SignIn(){
@@ -31,10 +32,10 @@ export function SignIn(){
 
                 <Button title='Entrar' />
 
-                <a href="#">
+                <Link to='/register'>
                     Criar Conta
 
-                </a>
+                </Link>
 
             </Form>
 

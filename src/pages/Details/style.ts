@@ -57,6 +57,7 @@ export const Content = styled.div `
         font-size: 16px;
         margin-top: 16px;
         text-align: justify;
+        color: ${({ theme }) => theme.colors.GRAY_100}
     }
 
 
