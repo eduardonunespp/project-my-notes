@@ -25,13 +25,12 @@ export const Container = styled.div `
 
 export const Brand = styled.div `
     grid-area: brand;
-
     display: flex;
     align-items: center;
     justify-content: center;
 
     border-bottom: 1px solid ${({theme}) => theme.colors.BACKGROUND_700};
-    background-color: ${({theme}) => theme.colors.BACKGROUND_900};
+    background-color: ${({theme}) => theme.colors.BACKGROUND_800};
 
     > h1 {
         font-size: 24px;
