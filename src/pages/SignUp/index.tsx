@@ -21,8 +21,6 @@ export function SignUp(){
 
     const navigate = useNavigate()
 
-    console.log(name, email, password)
-
     function handleSignUp(){
         if(!name || !email || !password){
             return alert("Preencha todos os campos!")
@@ -46,7 +44,6 @@ export function SignUp(){
 
 
     
-
     return(
         <Container>
 
