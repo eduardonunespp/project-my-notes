@@ -7,9 +7,13 @@ import { Section } from '../../components/Section'
 import { Note } from '../../components/Note/node'
 import { Tag } from '../../components/Tag'
 
+import {useState} from 'react'
+
 
 
 export function Home(){
+
+
     return(
         <Container>
             <Brand>

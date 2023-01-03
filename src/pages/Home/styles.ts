@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import { Section } from '../../components/Section';
 
 import { Link } from 'react-router-dom'
+import { divide } from 'lodash';
 
 export const Container = styled.div `
     width: 100%;
@@ -85,3 +86,4 @@ export const NewNote = styled(Link) `
     }
    
 `;
+
