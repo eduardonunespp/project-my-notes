@@ -6,14 +6,15 @@ import { Input } from '../../components/Input'
 import { Section } from '../../components/Section'
 import { Note } from '../../components/Note/node'
 import { Tag } from '../../components/Tag'
+import { PopUp } from '../../components/popUp'
 
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 
 
 
 export function Home(){
 
-
+  
     return(
         <Container>
             <Brand>
@@ -48,7 +49,8 @@ export function Home(){
                         >
                         </Note>
                                                 
-                </Section>    
+                </Section>  
+
 
             </Content>
 
@@ -58,6 +60,8 @@ export function Home(){
                 Criar nota
 
             </NewNote>
+
+            <PopUp title={'confirmar'}/>
 
         </Container>
     )

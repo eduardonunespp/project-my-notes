@@ -6,14 +6,16 @@ import { Container } from "./styles";
 interface Props extends HTMLAttributes<HTMLButtonElement> {
     title: string;
     loading?: boolean;
+    onClick?: any;
 }
 
-export function Button({title, loading = false, ...rest}: Props){
+export function Button({title, onClick, loading = false, ...rest}: Props){
 
     return(
         <Container 
         type="button"
         disabled={loading}
+        onClick={onClick}
         {...rest}
         >
              {loading ? 'Carregando...' : title }

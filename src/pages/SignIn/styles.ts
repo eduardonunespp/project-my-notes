@@ -60,8 +60,6 @@ export const Background = styled.div `
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.6;
-    
-
     width: 100%;
     height:100% ;
 
