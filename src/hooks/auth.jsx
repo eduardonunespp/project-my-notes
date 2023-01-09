@@ -62,10 +62,6 @@ function AuthProvider({ children }){
         }
     }
 
-      
-
-      
-
     }
 
     useEffect(() => {

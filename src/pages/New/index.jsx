@@ -5,12 +5,13 @@ import { TextArea } from '../../components/TextArea'
 import { NoteItem } from '../../components/NoteItem'
 import { Section } from '../../components/Section'
 import { Button } from '../../components/Button'
+import { ButtonText } from '../../components/ButtonText'
+import { PopUp } from '../../components/popUp'
 
 import { useState } from 'react'
 
 import { useNavigate } from 'react-router-dom'
 
-import { Link } from 'react-router-dom'
 
 import { api } from '../../services/api'
 
@@ -24,9 +25,28 @@ export function New(){
     const [title, setTitle] = useState("")
     const [description, setDescription] = useState("")
 
+    const [isActive, setIsActive] = useState(false)
+
+    function handleOpenModal(){
+        setIsActive(prev => !prev)
+    }
+
     const navigate = useNavigate()
 
     async function handleNewNote(){
+
+        if(!title){
+            return alert('Por favor, insira um título a nota')
+        }
+
+        if(newLink){
+            return alert('Por favor, insira o(s) links cadastrados')
+        }
+
+        if(newTag){
+            return alert('Por favor, insira a(s) tags cadastrados')
+        }
+
         api.post("/notes", {
             title,
             description,
@@ -35,7 +55,7 @@ export function New(){
         })
 
         alert("Nota criada com sucesso")
-        navigate("/")
+        navigate(-1)
     }
 
     console.log(links)
@@ -56,16 +76,20 @@ export function New(){
         setTag(statePreview => statePreview.filter(tag => tag !== deleted))
     }
 
+    function handleBack(){
+        navigate(-1)
+      }
+
 
     return(
         <Container>
-            <Header />
+            <Header handleOpenModal={handleOpenModal}/>
 
             <main>
                 <Form>
                     <header>
                         <h1>Criar Nota</h1>
-                        <Link to='/'>voltar</Link>
+                        <ButtonText title='voltar' onClick={handleBack}/>
                     </header>
 
                     <Input 
@@ -128,7 +152,6 @@ export function New(){
                         onClick={handleAddTag}
                         />
 
-
                         </div>
                  
                     </Section>
@@ -141,7 +164,11 @@ export function New(){
                 </Form>
             </main>
 
+            <PopUp message='Deseja mesmo sair da sua conta?' isOpen={isActive} handleClose={handleOpenModal}/>
+
         </Container>
+
+        
 
     )
    

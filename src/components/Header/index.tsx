@@ -6,11 +6,14 @@ import { useAuth } from '../../hooks/auth'
 import {api} from '../../services/api'
 
 
+interface headerProps {
+    handleOpenModal: () => void;
+}
 
 
 
+export function Header({handleOpenModal}: headerProps){
 
-export function Header(){
 
     const { signOut, user } = useAuth()
 
@@ -30,7 +33,7 @@ export function Header(){
                 </div>
             </Profile>
 
-            <Logout onClick={signOut}>
+            <Logout onClick={handleOpenModal}>
                 <RiShutDownLine/>
             </Logout>
 

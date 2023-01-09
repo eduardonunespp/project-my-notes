@@ -14,6 +14,9 @@ export const Container = styled.div `
     'content'
     ;
 
+   
+
+
     > main {
         grid-area: content;
         overflow-y: auto;
@@ -30,6 +33,14 @@ export const Container = styled.div `
             margin-top: 0px;
             color: #fff;
         }
+
+        > header {
+            > button {
+            display: none;
+    }
+        }
+
+       
 `
 
 
@@ -48,7 +59,7 @@ export const Form = styled.form `
             color: #fff;
         }
 
-        a {
+        button {
             font-size: 20px;
             color: ${({theme}) => theme.colors.GRAY_300}
         }

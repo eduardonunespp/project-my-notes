@@ -13,8 +13,6 @@ import { Routes } from './routes'
 import { AuthProvider } from './hooks/auth'
 
 
-
-
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
