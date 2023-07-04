@@ -29,8 +29,8 @@ export function SignIn(){
     return(
         <Container>
             <Form>
-                <h1>Aiee Notes</h1>
-                <p>Aplicação para salvar e gerenciar seus links úteis</p>
+                <h1>My Notes</h1>
+                <p>Aplicação para salvar e gerenciar suas anotações úteis</p>
 
                 <h2>Faça seu Login</h2>
 
