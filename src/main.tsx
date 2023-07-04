@@ -11,6 +11,7 @@ import { New } from './pages/New'
 import { Routes } from './routes'
 
 import { AuthProvider } from './hooks/auth'
+import { Grid } from './grid'
 
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(

@@ -12,3 +12,4 @@ export function Input({icon: Icon, ...rest}: any){
         </Container>
     )
 }
+

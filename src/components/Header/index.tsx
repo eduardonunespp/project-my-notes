@@ -7,7 +7,7 @@ import {api} from '../../services/api'
 
 
 interface headerProps {
-    handleOpenModal: () => void;
+    handleOpenModal?: () => void;
 }
 
 

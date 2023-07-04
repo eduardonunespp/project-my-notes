@@ -1,8 +1,5 @@
 import { Container } from './styles' 
 
-
-
-
 export function Section({title, children}: any){
     return(
         <Container>
