@@ -1,15 +1,15 @@
 
 <h1></h1>
 
-![WhatsApp Image 2023-07-10 at 10 07 59](https://github.com/eduardonunespp/project-my-notes/assets/100363170/a3775dc4-c8f9-4856-a432-0b3a90442ce9)
+![WhatsApp Image 2023-07-10 at 10 39 39](https://github.com/eduardonunespp/project-my-notes/assets/100363170/65401159-d5bb-4b31-abab-4a9e256ea2ba)
 
 <h1></h1>
 
 <div>
  
- <h1>Rocket Notes</h1>
+ <h1>My Notes</h1>
  
-  O Rocket Notes é um projeto desenvolvido em React com TypeScript que permite aos usuários realizar autenticação, criar, editar e excluir notas, gerenciar seu perfil de usuário e utilizar um filtro de pesquisa para encontrar notas específicas.
+  O My Notes é um projeto desenvolvido em React com TypeScript que permite aos usuários realizar autenticação, criar, editar e excluir notas, gerenciar seu perfil de usuário e utilizar um filtro de pesquisa para encontrar notas específicas.
  
  <h2>Tecnologias ultilizadas:</h2>
  
