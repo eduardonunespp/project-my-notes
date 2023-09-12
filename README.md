@@ -11,7 +11,7 @@
  
   O My Notes é um projeto desenvolvido em React com TypeScript que permite aos usuários realizar autenticação, criar, editar e excluir notas, gerenciar seu perfil de usuário e utilizar um filtro de pesquisa para encontrar notas específicas.
  
- <h2>Tecnologias ultilizadas:</h2>
+ <h2>Tecnologias utilizadas:</h2>
  
  <div>
     <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
